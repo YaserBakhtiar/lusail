@@ -8,12 +8,13 @@
 <meta property="og:title" content="من تراب القرية إلى آفاق الدوحة"><meta property="og:description" content="مسابقة قصة رحلة طالب دولي — بقلم ياسر بختيار"><meta property="og:type" content="article">
 <meta name="theme-color" content="#8a1538">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 110'><rect width='280' height='110' fill='%238A1538'/><path d='M0 0H80L116 6 80 12 116 18 80 24 116 30 80 37 116 43 80 49 116 55 80 61 116 67 80 73 116 79 80 85 116 91 80 98 116 104 80 110H0z' fill='white'/></svg>">
+<link rel="preload" as="font" type="font/ttf" crossorigin href="https://cdn.jsdelivr.net/gh/nuqayah/kitab-font@master/Kitab-Regular.ttf">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;700&family=Scheherazade+New:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script>
 document.documentElement.classList.add('js');
 try{var t=localStorage.getItem('theme'),f=localStorage.getItem('fs')}catch(e){}
-document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+document.documentElement.dataset.theme=t||'light';
 if(f)document.documentElement.style.setProperty('--fs',f);
 function luErr(i){if(!i.dataset.r){i.dataset.r=1;i.src='https://lu.edu.qa/img/lu-logo.webp'}else i.parentNode.classList.add('nologo')}
 </script>
@@ -21,12 +22,15 @@ function luErr(i){if(!i.dataset.r){i.dataset.r=1;i.src='https://lu.edu.qa/img/lu
 /* نسخهٔ پشتیبان فونت امیری از CDN دوم (اگر گوگل فونت در دسترس نبود) */
 @font-face{font-family:'Amiri CDN';font-weight:400;font-display:swap;src:url(https://cdn.jsdelivr.net/fontsource/fonts/amiri@5.3.0/arabic-400-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
 @font-face{font-family:'Amiri CDN';font-weight:700;font-display:swap;src:url(https://cdn.jsdelivr.net/fontsource/fonts/amiri@5.3.0/arabic-700-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+/* خط کتاب (Kitab) — نسخ کلاسیک، مجوز OFL: github.com/nuqayah/kitab-font */
+@font-face{font-family:'Kitab';font-weight:400;font-display:swap;src:local('Kitab'),url(fonts/Kitab-Regular.ttf) format('truetype'),url(https://cdn.jsdelivr.net/gh/nuqayah/kitab-font@master/Kitab-Regular.ttf) format('truetype'),url(https://raw.githubusercontent.com/nuqayah/kitab-font/master/Kitab-Regular.ttf) format('truetype')}
+@font-face{font-family:'Kitab';font-weight:700;font-display:swap;src:local('Kitab'),url(fonts/Kitab-Bold.ttf) format('truetype'),url(https://cdn.jsdelivr.net/gh/nuqayah/kitab-font@master/Kitab-Bold.ttf) format('truetype'),url(https://raw.githubusercontent.com/nuqayah/kitab-font/master/Kitab-Bold.ttf) format('truetype')}
 :root{--bg:#fbf7f0;--ink:#2a2226;--mute:#76696f;--brand:#8a1538;--maroon:#8a1538;--deep:#3a0a19;--gold:#c9a24a;--card:#fff;--line:#eadfce;--soft:#f5ecdf;--fs:1;
---body:'Amiri','Amiri CDN','Traditional Arabic','Scheherazade New','Noto Naskh Arabic',serif;--disp:'Reem Kufi','Noto Kufi Arabic',sans-serif;--serif:'Amiri','Amiri CDN','Traditional Arabic','Noto Naskh Arabic',serif;--ui:'Tajawal','Noto Naskh Arabic',sans-serif}
+--body:'Kitab','Amiri','Amiri CDN','Traditional Arabic','Noto Naskh Arabic',serif;--disp:'Reem Kufi','Noto Kufi Arabic',sans-serif;--serif:'Kitab','Amiri','Amiri CDN','Traditional Arabic','Noto Naskh Arabic',serif;--ui:'Tajawal','Noto Naskh Arabic',sans-serif}
 [data-theme=dark]{--bg:#140e11;--ink:#efe6df;--mute:#b5a8a2;--brand:#e2758f;--card:#1f171c;--line:#36282f;--soft:#1c1318}
 *{box-sizing:border-box;margin:0}
 html{font-size:calc(16px*var(--fs));scroll-behavior:smooth;scroll-padding-top:5.5rem}
-body{font-kerning:normal;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.38rem;line-height:2.15;font-synthesis:none;transition:background .3s,color .3s;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-kerning:normal;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.55rem;line-height:2.05;font-synthesis:none;transition:background .3s,color .3s;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}
 .rail-on{scrollbar-width:none}.rail-on::-webkit-scrollbar{display:none}
 ::selection{background:var(--maroon);color:#fff}
@@ -95,7 +99,7 @@ main{width:100%;max-width:62rem;margin-inline:auto}
 .tprog i{flex:1;height:8px;border-radius:8px;background:var(--soft);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
 .tprog b{display:block;height:100%;width:0;border-radius:8px;background:linear-gradient(270deg,#8a1538,#c9a24a)}
 .toc>h3{font:700 1.5rem var(--disp);color:var(--brand);margin-bottom:.4rem}
-.toc h4{display:flex;align-items:center;gap:.5rem;margin:1rem 0 .2rem;font:700 1rem var(--serif);color:var(--ink)}
+.toc h4{display:flex;align-items:center;gap:.55rem;margin:1.1rem 0 .25rem;font:800 1.12rem/1.6 var(--ui);color:var(--brand)}
 .toc h4 em{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--maroon);color:#fff;font-style:normal;font-size:.72rem;line-height:1}
 .toc ol{list-style:none;padding:0;border-inline-start:2px solid var(--line)}
 .toc a{display:flex;gap:.6rem;padding:.2rem .9rem;margin-inline-start:-2px;border-inline-start:2px solid transparent;color:var(--mute);transition:.2s}
@@ -104,7 +108,7 @@ main{width:100%;max-width:62rem;margin-inline:auto}
 .scrim{display:none}
 
 /* story */
-.lead{font-size:1.5rem}
+.lead{font-size:1.68rem}
 .ch{margin-top:4.5rem}
 .chead{position:relative;margin-bottom:1.6rem}
 .num{font-size:.78rem;font-weight:700;color:var(--gold)}
@@ -112,14 +116,14 @@ h2{font:700 clamp(1.9rem,4vw,2.6rem)/1.6 var(--disp);color:var(--brand);padding-
 .chead h2::after{content:"";position:absolute;inset:auto 0 0 auto;width:80px;height:4px;border-radius:4px;background:linear-gradient(270deg,var(--maroon),var(--gold))}
 .lead,.ch p{font-family:var(--body);text-align:justify;text-justify:inter-word;margin-bottom:1.3rem}
 .ch p.amen{text-align:center}.ch .pq p{text-align:start}
-.amen{text-align:center;font:700 1.8rem/2.1 var(--serif);color:var(--brand);margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line)}
+.amen{text-align:center;font:700 2rem/2.1 var(--serif);color:var(--brand);margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--line)}
 figure{margin:2.4rem 0;position:relative}
 figure img{width:100%;border-radius:20px;box-shadow:0 20px 50px rgba(40,10,20,.22);cursor:zoom-in}
 figcaption{font-size:.85rem;color:var(--mute);margin-top:1rem;padding-inline-start:.9rem;border-inline-start:3px solid var(--gold);line-height:1.9}
 figure.tall img,figure.tall figcaption{max-width:min(100%,400px);margin-inline:auto}
 .pq{margin:2.8rem 0;padding:1.6rem 1.8rem 1.4rem;border-radius:22px;background:linear-gradient(135deg,var(--soft),transparent);border-inline-start:5px solid var(--maroon);position:relative}
 .pq::before{content:"”";position:absolute;inset:-.2rem auto auto 1.2rem;font:700 6rem/1 var(--serif);color:var(--gold);opacity:.4}
-.pq p{font:700 1.7rem/2.1 var(--serif);color:var(--brand);margin:0!important}
+.pq p{font:700 1.95rem/2.05 var(--serif);color:var(--brand);margin:0!important}
 .pq cite{display:block;margin-top:.4rem;font-style:normal;font-size:.82rem;color:var(--mute)}
 .part{position:relative;direction:ltr;overflow:hidden;margin:6rem 0 0;border-radius:26px;color:#fff;box-shadow:0 30px 60px rgba(60,10,25,.3);background-image:linear-gradient(100deg,rgba(138,21,56,.97) 30%,rgba(50,6,20,.9)),var(--ph,linear-gradient(165deg,#8a1538,#26050f));background-size:cover;background-position:center}
 .part::before{content:"";position:absolute;inset:0 auto 0 0;width:27%;background:#fff;clip-path:polygon(0 0,72% 0,100% 5.56%,72% 11.11%,100% 16.67%,72% 22.22%,100% 27.78%,72% 33.33%,100% 38.89%,72% 44.44%,100% 50.00%,72% 55.56%,100% 61.11%,72% 66.67%,100% 72.22%,72% 77.78%,100% 83.33%,72% 88.89%,100% 94.44%,72% 100.00%,0 100%)}
@@ -176,7 +180,7 @@ footer .flag{display:inline-block;vertical-align:middle;margin-inline:.4rem}
  .toc.open{transform:none}.scrim.open{display:block;position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.55)}
 }
 @media(min-width:1001px){#menu{display:none}}
-@media(max-width:640px){.stats{gap:.5rem}.stat{padding:.8rem .3rem}.stat strong{font-size:1.7rem}.stat span{font-size:.74rem}body{font-size:1.1rem}.route{font-size:.76rem}.hero{padding-bottom:8rem}.bar .brand,.bar #fm,.bar #fp{display:none}.bar .brand+*{margin-inline-start:auto}.part::before{width:22%}.part .pin{margin-left:26%;padding:2rem 1rem 2rem .5rem}.chead::before{font-size:5rem}}
+@media(max-width:640px){.stats{gap:.5rem}.stat{padding:.8rem .3rem}.stat strong{font-size:1.7rem}.stat span{font-size:.74rem}body{font-size:1.32rem}.lead{font-size:1.45rem}.pq p{font-size:1.6rem}.route{font-size:.76rem}.hero{padding-bottom:8rem}.bar .brand,.bar #fm,.bar #fp{display:none}.bar .brand+*{margin-inline-start:auto}.part::before{width:22%}.part .pin{margin-left:26%;padding:2rem 1rem 2rem .5rem}.chead::before{font-size:5rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.route::after{transition:none}.pol,.hero::after{animation:none}}
 @media print{.bar,.rail,.toc,.hero,.part,.thanks,.gal{display:none}.layout{display:block}}
 </style>
@@ -193,7 +197,7 @@ footer .flag{display:inline-block;vertical-align:middle;margin-inline:.4rem}
 </div>
 
 <header class="hero" id="top">
- <div class="sky"><img src="images/photo-3.png" alt=""></div>
+ <div class="sky"><img src="images/photo-3.jpg" alt=""></div>
  <div class="wrap hero-in">
   <div>
    <div class="top"><svg class="flag" viewBox="0 0 280 110"><use href="#flag"/></svg><span>دولة قطر</span>رؤية قطر الوطنية ٢٠٣٠</div>
@@ -298,7 +302,7 @@ footer .flag{display:inline-block;vertical-align:middle;margin-inline:.4rem}
 <p>كان الانتقال إلى هرات نقلةً نوعيةً في مسيرتي؛ ففيها، وللمرة الأولى، شعرتُ بأنّني أصبحت جزءاً من سلسلةٍ متصلةٍ من طلّاب العلم التي لم تنقطع منذ قرون. كنتُ أتمشى في أزقّتها، وأنا استشعر عبق التاريخ، وأتطلّع إلى مستقبلٍ يعيد إحياء هذا الإرث العظيم الذي حملته هرات على مرّ العصور، والتي ما زالت حتى اليوم، رغم كلّ الصعاب، &quot;قلب أفغانستان النابض بالعلم والثقافة&quot;.</p>
 <p>وبعدَ سنةٍ من الاستقرارِ في المدينةِ، التحقتُ بمدرسةٍ دينيةٍ عريقةٍ، كانت منارةً من مناراتِ العلومِ الإسلاميةِ في تلكَ المنطقةِ، وهناكَ شرعتُ في دراسةِ &quot;مسار الأدبي&quot; (العلوم الشرعية) من الصفِّ السادسِ وحتى الثاني عشرَ.</p>
 <p>كانت المناهجُ الدراسيةُ هناك بحراً زاخراً بالعلومِ المتنوعةِ؛ فدرستُ علمَ الصرف، وعلمَ النحو، وعلمَ البلاغة، وأصولَ الفقه، والتفسير، والحديث، والعقيدة. كانتْ كلُّ مادةٍ تفتحُ لي نافذةً جديدةً على عوالمَ معرفيةٍ رحبةٍ، وتغرسُ في روحي عمقاً علمياً وفهماً دقيقاً لدينِ اللهِ.</p>
-<figure class="reveal wide"><img src="images/photo-3.png" width="1700" height="243" loading="lazy" alt="منظر بانورامي لقلعة هرات"><figcaption>منظر بانورامي لقلعة هرات</figcaption></figure>
+<figure class="reveal wide"><img src="images/photo-3.jpg" width="1700" height="243" loading="lazy" alt="منظر بانورامي لقلعة هرات"><figcaption>منظر بانورامي لقلعة هرات</figcaption></figure>
 <figure class="reveal wide"><img src="images/photo-4.jpg" width="1700" height="698" loading="lazy" alt="الجامع الكبير في قلب مدينة هرات"><figcaption>الجامع الكبير في قلب مدينة هرات</figcaption></figure></section>
 <section class="ch" id="s7"><div class="chead reveal" data-n="٠٧"><span class="num">الفصل ٠٧</span><h2>اكتشاف نظام المنح.. حلم يتحقق</h2></div><p>في أثناء وجودي في المدرسة الدينية، حدث لقاء غير مساري تماماً. تعرفت على شخص قادم من السعودية للدراسة، فذهبت إليه بشوق كبير، وأمطرته بالأسئلة: كيف سافرت؟ وهل الدراسة مدفوعة الثمن أم مجانية؟ وهل دفعت شيئاً ؟</p>
 <p>أجابني بكل طيبة وصبر، وشرح لي نظام المنح بالتفصيل: &quot;هناك نظام اسمه المنح الدراسية. الجامعات تعلن عنها في مواقعها، ويتقدم الطلاب من كل مكان، وتختار الأكفأ منهم. الجامعة تتحمل كل شيء: تذاكر الطيران، الرسوم الدراسية، السكن، والمعيشة، ولا يدفع الطالب ريالا واحدا. أنا شخصيا جئت بهذه الطريقة&quot;.</p>
@@ -318,7 +322,7 @@ footer .flag{display:inline-block;vertical-align:middle;margin-inline:.4rem}
 <p>الأكثر إيلامًا أن هذا الانهيار لم يمسّ البنية التحتية فحسب، بل أصاب روح العلم في المجتمع الأفغاني؛ إذ تحوّلت الجامعات من منارات علم إلى مباني صامتة، وغادر الكفاءات العلمية البلاد، حاملين معهم عقودًا من الخبرات المتراكمة، تاركين وراءهم جيلاً كاملاً من الشباب بلا معلمين، وبلا منهج، وبلا أملٍ في مستقبل أكاديمي.</p>
 <p>ووسط هذه الفوضى، برز دور قطر الحبيبة كوسيط فاعل وجسر تواصل بين الأطراف المختلفة، حيث استضافت الدوحة منذ عام 2013 المكتب السياسي لطالبان، وكانت راعية للمفاوضات التي أسفرت عن اتفاق الدوحة 2020. وبعد السيطرة على كابل، واصلت الدوحة دورها في تسهيل الحوار الدولي وإعادة تشغيل مطار كابل بالتنسيق مع أطراف محايدة. غير أن الأثر الأعمق بالنسبة لي كان في المجال التعليمي، حيث كانت الجامعات القطرية، وفي مقدمتها جامعة لوسيل، باباً مفتوحاً أمام طلاب فقدوا بلدهم نظامه التعليمي، ليمنحوهم فرصة إعادة بناء مستقبلهم الأكاديمي من الصفر.</p>
 <p>هكذا، تحوّلت قطر من وسيط دبلوماسي إلى شريك في استعادة الأمل، ومن دولة جارة إلى وجهةٍ علميةٍ تعوّض ما فُقد في وطنٍ غاص في أزمة التعليم.</p>
-<figure class="reveal wide"><img src="images/photo-5.png" width="1536" height="1024" loading="lazy" alt="مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية"><figcaption>مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية</figcaption></figure></section>
+<figure class="reveal wide"><img src="images/photo-5.jpg" width="1536" height="1024" loading="lazy" alt="مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية"><figcaption>مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية</figcaption></figure></section>
 <section class="ch" id="s13"><div class="chead reveal" data-n="١٣"><span class="num">الفصل ١٣</span><h2>اغتنامُ وقتِ الانتظارِ في تحصيلِ العلمِ الشرعيِّ المتقدمِ</h2></div><p>ولم يضعِ اللهُ جهدي سدىً؛ ففي تلك السنتين الطويلتين من الانتظارِ، لم أتوقفْ عن التعلمِ لحظةً واحدةً. إلى جانبِ المرحلةِ الثانويةِ التي أنهيتها بنجاح، واصلتُ دراستي للعلومِ الشرعيةِ المتخصصةِ على يدِ كبارِ علماءِ هرات. أتقنتُ فنونَ اللغةِ العربيةِ من صرفٍ ونحوٍ وبلاغةٍ، ودرستُ المنطقَ وأصولَ الفقهِ والقواعدَ الفقهيةَ، وقرأتُ التفاسيرَ الموسعةَ، ودرستُ كتبَ الحديثِ النبويِّ الشريفِ.</p>
 <p>في عام 2022، بدأتُ مرحلةً نوعيةً جديدةً وهي دراسةُ &quot;دورةِ الأحاديثِ النبويةِ المتخصصةِ&quot;، وهي دورةٌ رفيعةُ المستوى، تتعمقُ في شرحِ أحاديثِ الرسولِ صلى اللهُ عليهِ وسلمَ، وتحليلِ أسانيدها ومتونها، وذلك بالاعتمادِ على أمهاتِ كتبِ الحديثِ. كانت هذهِ الدورةُ معراجاً علمياً حقيقياً، زادتْ من عمقِ فهمي، ورفعتْ قدرتي على التحليلِ والاستنباطِ، وجعلتني مستعداً لأيِّ اختبارٍ أكاديميٍّ، أو مقابلةٍ مع أيِّ هيئةٍ علميةٍ في المستقبلِ.</p></section>
 <section class="ch" id="s14"><div class="chead reveal" data-n="١٤"><span class="num">الفصل ١٤</span><h2>التقدمُ لمنحِ تركيا.. تفوقٌ واحباطٌ سياسيٌّ</h2></div><p>ما إنْ حصلتُ على جوازِ سفري وشهادتي، حتى أسرعتُ بالتسجيلِ في المنح، وفي هذا الوقت كانت منحةُ الحكومةِ التركيةِ مفتوحة. كانت المنحة التركية تنافسية للغايةِ، لكنني كنتُ واثقاً من نفسي ومن أوراقي القويةِ؛ فقد حصلتُ على نسبةِ 99.12% في الثانويةِ، وكنتُ حافظاً لكتاب الله، ومتقناً عدة لغات: الفارسية والعربية وشيئا من الإنجليزية. هذهِ المقوماتُ جعلتني مرشحاً قوياً جداً، وهذا ما تأكد عندما وصلتني دعوةٌ لإجراءِ مقابلةٍ شخصيةٍ مع وفدٍ تركيٍّ، وكانتِ المقابلةُ رائعةً، وأجبتُ فيها بالعربيةِ الفصحى بطلاقةٍ، وأظهرتُ كفاءتي العاليةَ.</p>
@@ -380,7 +384,7 @@ footer .flag{display:inline-block;vertical-align:middle;margin-inline:.4rem}
  <a class="lu" href="https://lu.edu.qa" target="_blank" rel="noopener"><img src="images/lu-logo.webp" alt="جامعة لوسيل" onerror="luErr(this)"><b>جامعة لوسيل</b></a>
 </section>
 <div class="wrap" id="album"><div class="gal">
-<figure class="g8"><img src="images/photo-8.jpg" width="1700" height="1622" loading="lazy" alt="أول يوم دراسي في جامعة لوسيل"><figcaption>أول يوم دراسي في جامعة لوسيل</figcaption></figure><figure class="g7"><img src="images/photo-7.jpg" width="957" height="1700" loading="lazy" alt="أول صورة في قطر - بعد الخروج من مطار حمد الدولي، أمام حافلة جامعة لوسيل"><figcaption>أول صورة في قطر - بعد الخروج من مطار حمد الدولي، أمام حافلة جامعة لوسيل</figcaption></figure><figure class="g2"><img src="images/photo-2.jpg" width="1700" height="956" loading="lazy" alt="يوم حفل تخرجي من حفظ القرآن - اليوم الذي حفظت القرآن كاملا"><figcaption>يوم حفل تخرجي من حفظ القرآن - اليوم الذي حفظت القرآن كاملا</figcaption></figure><figure class="g1"><img src="images/photo-1.jpg" width="1700" height="1698" loading="lazy" alt="الجامع عمر بن عبد العزيز في قرية كوفان، مدينة هرات، أفغانستان، يعود تاريخه إلى سنة 99 من الهجرة"><figcaption>الجامع عمر بن عبد العزيز في قرية كوفان، مدينة هرات، أفغانستان، يعود تاريخه إلى سنة 99 من الهجرة</figcaption></figure><figure class="g6"><img src="images/photo-6.jpg" width="957" height="1700" loading="lazy" alt="في مطار كابل مع جواز سفري والتذاكر"><figcaption>في مطار كابل مع جواز سفري والتذاكر</figcaption></figure><figure class="g4"><img src="images/photo-4.jpg" width="1700" height="698" loading="lazy" alt="الجامع الكبير في قلب مدينة هرات"><figcaption>الجامع الكبير في قلب مدينة هرات</figcaption></figure><figure class="g5"><img src="images/photo-5.png" width="1536" height="1024" loading="lazy" alt="مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية"><figcaption>مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية</figcaption></figure>
+<figure class="g8"><img src="images/photo-8.jpg" width="1700" height="1622" loading="lazy" alt="أول يوم دراسي في جامعة لوسيل"><figcaption>أول يوم دراسي في جامعة لوسيل</figcaption></figure><figure class="g7"><img src="images/photo-7.jpg" width="957" height="1700" loading="lazy" alt="أول صورة في قطر - بعد الخروج من مطار حمد الدولي، أمام حافلة جامعة لوسيل"><figcaption>أول صورة في قطر - بعد الخروج من مطار حمد الدولي، أمام حافلة جامعة لوسيل</figcaption></figure><figure class="g2"><img src="images/photo-2.jpg" width="1700" height="956" loading="lazy" alt="يوم حفل تخرجي من حفظ القرآن - اليوم الذي حفظت القرآن كاملا"><figcaption>يوم حفل تخرجي من حفظ القرآن - اليوم الذي حفظت القرآن كاملا</figcaption></figure><figure class="g1"><img src="images/photo-1.jpg" width="1700" height="1698" loading="lazy" alt="الجامع عمر بن عبد العزيز في قرية كوفان، مدينة هرات، أفغانستان، يعود تاريخه إلى سنة 99 من الهجرة"><figcaption>الجامع عمر بن عبد العزيز في قرية كوفان، مدينة هرات، أفغانستان، يعود تاريخه إلى سنة 99 من الهجرة</figcaption></figure><figure class="g6"><img src="images/photo-6.jpg" width="957" height="1700" loading="lazy" alt="في مطار كابل مع جواز سفري والتذاكر"><figcaption>في مطار كابل مع جواز سفري والتذاكر</figcaption></figure><figure class="g4"><img src="images/photo-4.jpg" width="1700" height="698" loading="lazy" alt="الجامع الكبير في قلب مدينة هرات"><figcaption>الجامع الكبير في قلب مدينة هرات</figcaption></figure><figure class="g5"><img src="images/photo-5.jpg" width="1536" height="1024" loading="lazy" alt="مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية"><figcaption>مشهد فوضوي في مطار كابول حيث يندفع الآلاف يائسين للفرار من العاصمة الأفغانية</figcaption></figure>
 </div></div>
 <footer><i class="zu"></i>
  <svg class="flag" viewBox="0 0 280 110"><use href="#flag"/></svg> مسابقة قصة رحلة طالب دولي · رؤية قطر الوطنية ٢٠٣٠<br>جميع الحقوق محفوظة © ياسر بختيار</footer>
